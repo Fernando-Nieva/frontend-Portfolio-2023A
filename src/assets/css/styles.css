@@ -1,0 +1,377 @@
+/*Importar fuentes custom*/
+
+@font-face {
+  font-family: "yanone";
+  src: url("fonts/yanone.ttf");
+}
+@font-face {
+  font-family: "finger";
+  src: url("fonts/finger.ttf");
+}
+
+/* Generales */
+ *{
+  margin: 0px;
+  padding: 0px;
+} 
+
+body{
+  
+  font-family: ("yanone",Arial,Helvetica);
+
+  background-attachment: fixed;
+  /* background-color: #131618; */
+} 
+ .clearfix{
+  float: none;
+  clear: both;
+} 
+
+/*Barra navegacion*/
+ header{
+  width: 100%;
+  height: 90px;
+  background-color: #07ff9c;
+  position: fixed;
+  text-transform: uppercase;
+}
+
+header ul{
+  display: block;
+  width: 40%;
+  height: inherit;
+  margin: 0px auto;
+  margin-top: -3px;
+} 
+
+ header ul li{
+  display: inline-block;
+  margin: 0px auto;
+  text-align: center;
+  line-height: 90px;
+}
+
+header a{
+  display: block;
+  padding-right: 20px;
+  padding-left: 20px;
+  height: inherit;
+  text-decoration: none;
+  color: white;
+  transition: all 300ms;
+
+} 
+.logo{
+font-family: "finger";
+font-size: 30px;
+}
+.logo a{
+  transition: color 500ms, transform 500ms;
+}
+header a:hover,
+.actived{
+  background: rgba(0,0,0,0.8);
+}
+
+header .logo a:hover{
+  background: transparent;
+  color: black;
+  transform: scale(1.50,1.50);
+} 
+
+
+
+
+/*Contenedor principal*/
+
+ #content{
+  min-height: 1000px;
+  height: auto;
+  width: 80%;
+  margin: 0px auto;
+  box-shadow: 0px 0px 40px black;
+  border-left: 1px solid #b7b7b7;
+  background: rgba(255,255,255,0.7);
+  padding-top: 120px;
+} 
+
+/*Pie de pagina*/
+
+footer{
+  width: 75%;
+  margin: 0px auto;
+  padding-top: 15px;
+  color: rgba(255, 255, 255, 0.5);
+  
+}
+
+
+/*Fondo custom*/
+
+
+   .circle{
+  position: absolute;
+  border-radius: 50%;
+  background: #07ff9c;
+  animation: ripple 15s infinite;
+  box-shadow: 0px 0px 1px 0px #0f3650;
+  z-index: -1; /* Asigna un valor negativo para que estén detrás del contenido */
+
+}
+
+.small{
+  width: 200px;
+  height: 200px;
+  left: -100px; 
+  bottom: -100px;
+}
+
+.medium{
+  width: 400px;
+  height: 400px;
+  left: -200px;
+  bottom: -200px;
+}
+
+.large{
+  width: 600px;
+  height: 600px;
+  left: -300px;
+  bottom: -300px;
+}
+
+.xlarge{
+  width: 800px;
+  height: 800px;
+  left: -400px;
+  bottom: -400px;
+}
+
+.xxlarge{
+  width: 1000px;
+  height: 1000px;
+  left: -500px;
+  bottom: -500px;
+}
+
+.shade1{
+  opacity: 0.2;
+}
+.shade2{
+  opacity: 0.5;
+}
+
+.shade3{
+  opacity: 0.7;
+}
+
+.shade4{
+  opacity: 0.8;
+}
+
+.shade5{
+  opacity: 0.9;
+}
+
+@keyframes ripple{
+  0%{
+    transform: scale(0.8);
+  }
+  
+  50%{
+    transform: scale(1.2);
+  }
+  
+  100%{
+    transform: scale(0.8);
+  }
+}   
+
+
+/*Sobre mi*/
+
+#title{
+  width: 70%;
+  margin: 0px auto;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 70px;
+
+}
+
+#title h1{
+  font-family: "finger";
+  font-size: 60px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+#title h2{
+  font-size: 25px;
+  color: gray;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+article.about{
+  width: 70%;
+  margin: 0px auto;
+  margin-bottom: 20px;
+  font-size: 23px;
+}
+
+
+.about h2{
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+.about p{
+  padding-top: 20px;
+  padding-bottom: 30px;
+  text-align: justify;
+
+
+}
+
+
+/*SEccion formulario*/
+.container{
+  padding:  50px;
+  padding-top: 10px;
+}
+
+.container .image{
+  float:  left;
+  width: 50%;
+}
+.container .image img{
+  
+  width: 100%;
+}
+.container .data{
+  float:  left;
+  width: 50%;
+  margin-left: 30px;
+}
+
+.container h2{
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+
+}
+
+form{
+  width: 80%;
+}
+
+form label{
+  display: block;
+  width: 100%;
+margin-top: 10px;
+margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form textarea{
+  width: 40%;
+  padding: 5px;
+}
+form button,
+form input[type="submit"],
+  .button-edit,
+  .button-delete{
+
+    display: block;
+    font-size: 17px;
+    padding: 5px;
+    margin-top: 15px;
+    color: white;
+    background-color: #0f3650;
+    cursor: pointer;
+}
+.button-edit,
+.button-delete{
+  width: 40%;
+  float:left;
+  text-align: center;
+  margin-right: 10px;
+  text-decoration: none;
+  }
+  .button-edit{
+    background-color: rgb(0, 174, 44);
+    border: 1px solid black;
+  }
+  .button-delete{
+    background-color: rgb(255, 0, 0);
+    border: 1px solid black;
+  }
+.form_error{
+  font-size: 13px;
+  padding: 3px; 
+  background-color: red;
+  color: white;
+  margin-left: 5px;
+    
+}
+.form input[disabled]{
+  opacity: 0,4;
+  cursor: not-allowed;
+
+}
+.message{
+  width: 60%;
+  padding: 5px;  
+  border:  1px solid #eee;
+
+}
+.success{
+  background-color: #00ff6a;
+  color: white;
+}
+
+.success a{
+  color: white;
+}
+.failed{
+  background-color: red;
+  color: white;
+
+}
+
+/*Pagina de proyectos*/
+
+.project{
+  list-style: none;
+  display: block;
+  float: left;
+  width: 28%;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+
+}
+.project.image{
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+
+}
+
+.project img {
+  width: 100%;
+}
+
+.project a{
+  text-decoration: none;
+  color: black;
+}
+.confirm{
+  display: block;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
