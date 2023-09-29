@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { SwupService } from './components/service/swup.service';
+
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +10,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Portfolio';
+  
+  constructor(private swupService: SwupService) {}
+
 }

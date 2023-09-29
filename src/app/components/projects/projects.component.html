@@ -1,18 +1,28 @@
-<div class="container">
-  <h2>Proyectos</h2>
+<link rel="stylesheet" href="/assets/css/transitions.css" />
+
+<main id="swup" class="transition-main" data-swup-transition="right">
+<html>
+
+  <div class="container">
+    
+    <h2>Proyectos</h2>
 
   <ul>
     <li *ngFor="let project of projects" class="project">
       <a [routerLink]="['/proyecto', project._id]">
         <div class="image">
           <img
-            src="{{ url + 'get-image/' + project.image }}"
+          src="{{ url + 'get-image/' + project.image }}"
             *ngIf="project.image"
-          />
-        </div>
-        <h3>{{ project.name }}</h3>
-        <p>{{ project.category }}</p>
-      </a>
-    </li>
-  </ul>
-</div>
+            />
+          </div>
+          <h3>{{ project.name }}</h3>
+          <p>{{ project.category }}</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+  </html>
+</main>
+

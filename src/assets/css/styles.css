@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: "yanone";
-  src: url("fonts/yanone.ttf");
+  src: url("/assets/fonts/yanone.ttf");
 }
 @font-face {
   font-family: "finger";
-  src: url("fonts/finger.ttf");
+  src: url("/assets/fonts/finger.ttf");
 }
 
 /* Generales */
@@ -98,10 +98,14 @@ header .logo a:hover{
 /*Pie de pagina*/
 
 footer{
-  width: 75%;
+  text-align: center;
+  
+  width: 100%;
   margin: 0px auto;
-  padding-top: 15px;
-  color: rgba(255, 255, 255, 0.5);
+  padding-top: 40px;
+  color: rgb(255, 255, 255);
+  background-color: #393a3b;
+  z-index: -3;
   
 }
 
@@ -374,4 +378,6 @@ form input[type="submit"],
   font-weight: bold;
   margin-top: 20px;
 }
+
+
 

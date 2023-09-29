@@ -6,9 +6,9 @@ import { Component, OnInit, ViewChild } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
+  email: string ="nieva.gmail.com";
 
   constructor(){
-
   }
 
   

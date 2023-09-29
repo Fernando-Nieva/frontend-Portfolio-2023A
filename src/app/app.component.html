@@ -1,15 +1,21 @@
 
+<!-- <link rel="stylesheet" href="/assets/css/transitions.css" /> -->
+
 <header>
+  <!-- <main id="swup" class="transition-main"> -->
   <ul>
+
     <li>
-      <a [routerLink]="['/sobre-mi']" [routerLinkActive]="['actived']"
-      >Sobre mi</a
-      >
+      
+      <a [routerLink]="['/sobre-mi']" [routerLinkActive]="['actived']" class="buttoners" data-swup-transition="left">Sobre mi</a>
+      
+      
     </li>
     <li>
-      <a [routerLink]="['/proyectos']" [routerLinkActive]="['actived']"
-      >Proyectos</a
-      >
+      <a [routerLink]="['/proyectos']" [routerLinkActive]="['actived']" class="buttoners"  data-swup-transition="right">Proyectos</a>
+     
+
+      
     </li>
     <li class="logo" [routerLinkActive]="['actived']"><a href="#">logo</a></li>
     <li>
@@ -23,12 +29,13 @@
       >
     </li>
   </ul>
+<!-- </main> -->
 </header>
-
 <section id="content">
   <router-outlet></router-outlet>
-
+  
 </section>
+
 
 <footer>Desarrollador Full stack &copy;</footer>
 
@@ -40,3 +47,4 @@
   <div class="circle small shade5"></div>
 </div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+

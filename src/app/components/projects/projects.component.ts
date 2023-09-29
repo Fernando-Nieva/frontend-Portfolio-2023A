@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Project } from '../models/project';
 import { ProjectService } from '../service/project.service';
 import { global } from '../service/global';
+import { SwupService } from '../service/swup.service'; // Importa SwupService
+
 
 
 @Component({
@@ -14,9 +16,12 @@ export class ProjectsComponent implements OnInit {
   public projects:Project[];
   public url:string;
 
+
+  
   constructor(
-    private _projectService:ProjectService
-  ){
+    private _projectService: ProjectService,
+    private swupService: SwupService // Inyecta SwupService
+  ) {
     this.url = global.url;
   }
 

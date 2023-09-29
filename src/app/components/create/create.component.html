@@ -1,3 +1,8 @@
+
+<link rel="stylesheet" href="/assets/css/transitions.css" />
+
+<main id="swup" class="transition-main" data-swup-transition="right">
+
 <div class="container" *ngIf="project">
 	<h2>{{title}}</h2>
 
@@ -58,3 +63,4 @@
 		<input type="submit" value="Enviar" [disabled]="!projectForm.form.valid" />
 	</form>
 </div>
+</main>
